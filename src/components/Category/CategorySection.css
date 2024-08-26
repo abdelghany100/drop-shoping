@@ -1,0 +1,42 @@
+.category-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.category-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* transition:5ms; */
+}
+
+.category {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(.1, 0.1, 0.1, 0.2);
+    flex: 1;
+    max-width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.category:hover {
+    transform: scale(1.1);
+   /* transition: 3ms; */
+}
+
+.category span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}

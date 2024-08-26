@@ -1,0 +1,153 @@
+/* LoginPage.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #f2f2f2; */
+}
+
+.login-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.login-left,
+.login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.login-left {
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  
+}
+
+.login-right {
+  background-image: url("../../assets//rigister.png"); /* Adjust with your image path */
+  background-size: cover;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1em;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+  color: rgb(160, 158, 158);
+  margin: 1rem 0;
+}
+
+.social-login {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-login button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgb(168, 168, 168);
+  gap: 0.3rem;
+
+}
+
+
+.or {
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  
+}
+
+.forgot-password {
+  color: orange;
+  margin-bottom: 20px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.signup-btn {
+  background-color: orange;
+  border: 2px solid orange;
+}
+
+.signup-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-right {
+    display: none;
+  }
+
+  .login-left {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  form input {
+    padding: 8px;
+  }
+
+  .social-login button {
+    padding: 8px 16px;
+  }
+
+   
+}

@@ -1,0 +1,126 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  color: rgb(241, 128, 0);
+  font-weight: bold;
+}
+
+.navbar .filter {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.navbar .filter .search input {
+  border: 1px solid rgb(194, 190, 190);
+  outline: none;
+  color: rgb(241, 128, 0);
+  padding: 6px 20px;
+}
+
+.navbar .filter .search button {
+  border: 1px solid rgb(194, 190, 190);
+  border-radius: 0 10px 10px 0;
+  outline: none;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: transparent;
+  color: rgb(241, 128, 0);
+}
+
+.navbar .filter .dropdown button {
+  border: 1px solid rgb(194, 190, 190);
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 8px;
+  gap: 3px;
+  background-color: transparent;
+}
+
+.navbar .filter .dropdown ul {
+  padding: 0;
+  margin-left: 2px;
+  margin-top: 0;
+}
+
+.navbar .filter .dropdown li {
+  list-style: none;
+}
+
+.navbar .auth .loginBtn {
+  background-color: rgb(241, 128, 0);
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.navbar .auth .signBtn {
+  color: rgb(241, 128, 0);
+  text-decoration: none;
+  background-color: white;
+  padding: 5px 5px;
+  border: 0.5px solid rgb(241, 128, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.navbar .auth {
+  display: flex;
+  gap: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .navbar .filter {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .navbar .auth {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .navbar .filter .search input,
+  .navbar .filter .search button,
+  .navbar .filter .dropdown button {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+  .navbar .auth .loginBtn,
+  .navbar .auth .signBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
